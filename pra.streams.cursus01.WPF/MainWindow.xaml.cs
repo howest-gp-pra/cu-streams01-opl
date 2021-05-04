@@ -88,7 +88,6 @@ namespace pra.streams.cursus01.WPF
                 using (StreamWriter streamWriter = new StreamWriter(fullFilePath))
                 {
                     streamWriter.Write(content);
-                    streamWriter.Close();
                 }
                 isSuccessfullyWritten = true;
             }
