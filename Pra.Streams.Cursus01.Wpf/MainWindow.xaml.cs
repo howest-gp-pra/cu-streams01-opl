@@ -21,12 +21,13 @@ namespace Pra.Streams.Cursus01.Wpf
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        string errorMessage;
+
         public MainWindow()
         {
             InitializeComponent();
         }
-
-        string errorMessage;
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -36,7 +37,7 @@ namespace Pra.Streams.Cursus01.Wpf
             ShowErrorMessage();
         }
 
-        private void btnReadTextFile_Click(object sender, RoutedEventArgs e)
+        private void BtnReadTextFile_Click(object sender, RoutedEventArgs e)
         {
             string fileName;
             fileName = txtFileName.Text;
@@ -45,7 +46,7 @@ namespace Pra.Streams.Cursus01.Wpf
             ShowErrorMessage();
         }
 
-        private void btnWriteTextFile_Click(object sender, RoutedEventArgs e)
+        private void BtnWriteTextFile_Click(object sender, RoutedEventArgs e)
         {
             string content = txtContent.Text;
             string fullFilePath = @"c:\howest\" + txtFileName.Text;
@@ -79,6 +80,7 @@ namespace Pra.Streams.Cursus01.Wpf
             }
             return fileContent;
         }
+
         bool WriteFile(string fullFilePath, string content)
         {
             bool isSuccessfullyWritten = false;
@@ -106,6 +108,7 @@ namespace Pra.Streams.Cursus01.Wpf
             }
             return isSuccessfullyWritten;
         }
+
         void ShowErrorMessage()
         {
             tbkErrors.Text = errorMessage;

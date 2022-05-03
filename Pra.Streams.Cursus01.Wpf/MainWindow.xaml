@@ -8,10 +8,10 @@
     <Grid>
         <TextBox x:Name="txtContent" HorizontalAlignment="Left" Height="366" Margin="10,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370" VerticalScrollBarVisibility="Auto"/>
         <Label Content="Tekst" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Width="141"/>
-        <Button x:Name="btnReadTextFile" Content="Lees bestand" HorizontalAlignment="Left" Margin="248,14,0,0" VerticalAlignment="Top" Width="88" Height="28" Click="btnReadTextFile_Click" />
+        <Button x:Name="btnReadTextFile" Content="Lees bestand" HorizontalAlignment="Left" Margin="248,14,0,0" VerticalAlignment="Top" Width="88" Height="28" Click="BtnReadTextFile_Click" />
         <TextBox x:Name="txtFileName" HorizontalAlignment="Left" Height="23" Margin="113,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Bestandsnaam" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="98"/>
-        <Button x:Name="btnWriteTextFile" Content="Schrijf bestand" HorizontalAlignment="Left" Margin="248,59,0,0" VerticalAlignment="Top" Width="88" Height="28" Click="btnWriteTextFile_Click"/>
+        <Button x:Name="btnWriteTextFile" Content="Schrijf bestand" HorizontalAlignment="Left" Margin="248,59,0,0" VerticalAlignment="Top" Width="88" Height="28" Click="BtnWriteTextFile_Click"/>
         <TextBlock x:Name="tbkErrors" HorizontalAlignment="Left" Margin="420,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="94" Width="370" Background="#FFF90404" Foreground="White" Padding="10"/>
 
     </Grid>
