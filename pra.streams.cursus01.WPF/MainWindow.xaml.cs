@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
 
-namespace pra.streams.cursus01.WPF
+namespace Pra.Streams.Cursus01.Wpf
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
